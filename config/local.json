@@ -1,0 +1,34 @@
+{
+    "server": {
+        "host": "0.0.0.0",
+        "port": 3001
+    },
+    "logs": {
+        "level": "debug"
+    },
+    "cors": [
+        "https://swagger.xinfin.network"
+    ],
+    "xinfinscanUrl": "https://explorer.apothem.network",
+    "xinfinscanAPI": "https://scan.xinfin.network",
+    "xdcwalletUrl": "https://wallet.testnet.xinfin.network",
+    "xdcrelayerAPI": "https://relayer.testnet.xinfin.network",
+    "relayerAuthorityKey": "",
+    "tokenListAPI": "https://raw.githubusercontent.com/xdposchain/tokens/master/tokens",
+    "blockchain": {
+        "rpc": "https://rpc1.xinfin.network",
+        "ws": "wss://ws1.xinfin.network",
+        "networkId": 51,
+        "gas": 1000000,
+        "deployPrice": 10000000000000,
+        "issuerAddress": "",
+        "XinFinxAddress": ""
+    },
+    "db": {
+        "uri": "mongodb://localhost:27017/stablecoin"
+    },
+    "truffle": {
+        "privateKey": "5018c21cfca7015ff1ec7cafcb83095f2ffe7caea10819510f9599f2d33e6238",
+        "minCapacity": "10"
+    }
+}

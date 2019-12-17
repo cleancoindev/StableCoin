@@ -1,0 +1,79 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Settings
+# Tools
+# Generic
+# Elements
+# Objects
+# Components
+# Trumps
+--------------------------------------------------------------*/
+
+/*
+SETTINGS FONT
+
+add google font
+================================================
+*/
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,500,600,700|Quicksand:400,500,700|Roboto:400,500,700&display=swap');
+
+/*
+SETTINGS
+store all variables, config switches, etc.
+Split up into logical sections, the smaller and simpler the better.
+used with preprocessors and contain font, colors definitions, etc
+================================================
+*/
+
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+@import '../../../node_modules/bootstrap/scss/utilities';
+
+/*
+COMPONENTS
+================================================
+Specific UI components.
+This is where majority of our work takes place and our UI components are often composed of Objects and Components
+*/
+
+//Folder tools
+@import 'tools/mixins';
+@import 'tools/placeholder';
+
+//Folder settings
+@import 'settings/colors';
+@import 'settings/fonts';
+@import 'settings/points';
+
+//Folder objects
+@import 'objects/alignments';
+@import 'objects/animations';
+@import 'objects/clearings';
+@import 'objects/media';
+
+//Folder elements
+@import 'elements/buttons';
+@import 'elements/elements';
+@import 'elements/fields';
+@import 'elements/links';
+@import 'elements/lists';
+@import 'elements/tables';
+@import 'elements/typography';
+@import 'elements/checkmark';
+
+//Folder components
+@import 'components/container';
+@import 'components/common';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/welcome';
+@import 'components/login';
+@import 'components/token';
+@import 'components/newtoken';
+@import 'components/donate';
+@import 'components/applyxinfin';
+@import 'components/loading';
+@import 'components/search';
+@import 'components/codemirror';

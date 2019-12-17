@@ -1,0 +1,43 @@
+// Text color setting
+$color-link-default: #0093FF;
+$color-link-default-active: #1384D7;
+$color-text-default: #464555;
+$color-text-gray: #464555;
+$color-text-white: #ffffff;
+$color-text-oranges: #FF4696;
+$color-text-blue: #00bad1;
+$color-text-violet: #5565c7;
+$color-text-yellow: #ffaf01;
+
+.text-gray {
+    color: $color-text-gray;
+}
+.text-white {
+    color: $color-text-white;
+}
+.text-oranges {
+    color: $color-text-oranges;
+}
+.text-blue {
+    color: $color-text-blue;
+}
+.text-violet {
+    color: $color-text-violet;
+}
+.text-yellow {
+    color: $color-text-yellow;
+}
+
+//background color setting
+$background-default: #F3F6FC;
+$background-transparent: transparent;
+$background-white: #ffffff;
+$background-oranges: #FF4696;
+$background-blue: #00bad1;
+$background-blue-active: #0699AC;
+$background-violet: #5565c7;
+$background-violet-active: #3D4DAC;
+
+
+
+

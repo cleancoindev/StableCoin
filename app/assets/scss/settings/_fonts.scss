@@ -1,0 +1,125 @@
+//Font famyli setting
+$font-baijam: 'Bai Jamjuree', sans-serif;
+$font-quicksand: 'Quicksand', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+
+//Fonts stablecoin Icomoon
+@font-face {
+  font-family: 'stablecoin';
+  src:  url('../fonts/stablecoin/stablecoin.eot?cgkiqz');
+  src:  url('../fonts/stablecoin/stablecoin.eot?cgkiqz#iefix') format('embedded-opentype'),
+        url('../fonts/stablecoin/stablecoin.ttf?cgkiqz') format('truetype'),
+        url('../fonts/stablecoin/stablecoin.woff?cgkiqz') format('woff'),
+        url('../fonts/stablecoin/stablecoin.svg?cgkiqz#stablecoin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="stablecoin-"], [class*=" stablecoin-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'stablecoin' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.stablecoin-icon-burn:before {
+  content: "\e917";
+}
+.stablecoin-icon-reissue:before {
+  content: "\e918";
+}
+.stablecoin-earth:before {
+  content: "\e915";
+}
+.stablecoin-medium:before {
+  content: "\e916";
+}
+.stablecoin-icon-search:before {
+  content: "\e914";
+}
+.stablecoin-icon-edit-pencil:before {
+  content: "\e913";
+}
+.stablecoin-icon-checkmark-outline:before {
+  content: "\e912";
+}
+.stablecoin-icon-startup:before {
+  content: "\e911";
+}
+.stablecoin-icon-next-right:before {
+  content: "\e910";
+}
+.stablecoin-icon-reddit:before {
+  content: "\e90f";
+}
+.stablecoin-icon-angle-double-left:before {
+  content: "\e900";
+}
+.stablecoin-icon-angle-double-right:before {
+  content: "\e901";
+}
+.stablecoin-icon-angle-down:before {
+  content: "\e902";
+}
+.stablecoin-icon-angle-left:before {
+  content: "\e903";
+}
+.stablecoin-icon-angle-right:before {
+  content: "\e904";
+}
+.stablecoin-icon-angle-up:before {
+  content: "\e905";
+}
+.stablecoin-icon-email:before {
+  content: "\e906";
+}
+.stablecoin-icon-facebook:before {
+  content: "\e907";
+}
+.stablecoin-icon-github:before {
+  content: "\e908";
+}
+.stablecoin-icon-linkedin:before {
+  content: "\e909";
+}
+.stablecoin-icon-telegram:before {
+  content: "\e90b";
+}
+.stablecoin-icon-xinfinz:before {
+  content: "\e90c";
+}
+.stablecoin-icon-twiter:before {
+  content: "\e90d";
+}
+.stablecoin-icon-wallet:before {
+  content: "\e90e";
+}
+.stablecoin-three-dots:before {
+  content: "\e919";
+}
+.stablecoin-icon-cog:before {
+  content: "\e91a";
+}
+.stablecoin-icon-info:before {
+  content: "\e91b";
+}
+.stablecoin-icon-xinfinx:before {
+  content: "\e90a";
+}
+.stablecoin-icon-xinfinx1:before {
+  content: "\e91f";
+}
+.stablecoin-icon-xinfinx2:before {
+  content: "\e920";
+}
+.stablecoin-icon-xinfinx3:before {
+  content: "\e921";
+}

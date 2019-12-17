@@ -1,0 +1,112 @@
+// Begin style title
+.tmp-title-small {
+	@include fsz(10);
+	font-family: $font-quicksand;
+	font-weight: normal;
+	&.oranges {
+		color: $color-text-oranges;
+	}
+	&.blue {
+		color: $color-text-blue;
+	}
+	&.violet {
+		color: $color-text-violet;
+	}
+	&.yellow {
+		color: $color-text-yellow;
+	}
+}
+
+.tmp-title-normal {
+	@include fsz(16);
+	font-family: $font-quicksand;
+	color: $color-text-default;
+	font-weight: normal;
+	&.oranges {
+		color: $color-text-oranges;
+	}
+	&.blue {
+		color: $color-text-blue;
+	}
+	&.violet {
+		color: $color-text-violet;
+	}
+	&.yellow {
+		color: $color-text-yellow;
+	}
+	&.weightbold {
+		font-weight: 500;
+	}
+}
+
+.tmp-title-medium {
+	@include fsz-cha(20,18,18);
+	font-family: $font-quicksand;
+	color: $color-text-default;
+	font-weight: 600;
+	font-size: 100%;
+	&.oranges {
+		color: $color-text-oranges;
+	}
+	&.blue {
+		color: $color-text-blue;
+	}
+	&.violet {
+		color: $color-text-violet;
+	}
+	&.yellow {
+		color: $color-text-yellow;
+	}
+}
+
+.tmp-title-large {
+	@include fsz-cha(28,24,24);
+	font-family: $font-baijam;
+	color: $color-text-default;
+	font-weight: 650;
+	&.oranges {
+		color: $color-text-oranges;
+	}
+	&.blue {
+		color: $color-text-blue;
+	}
+	&.violet {
+		color: $color-text-violet;
+	}
+	&.yellow {
+		color: $color-text-yellow;
+	}
+}
+
+.tmp-title-big {
+	@include fsz-cha(55, 45,25);
+	font-family: $font-baijam;
+	color: $color-text-default;
+	font-weight: 650;
+	&.oranges {
+		color: $color-text-oranges;
+	}
+	&.blue {
+		color: $color-text-blue;
+	}
+	&.violet {
+		color: $color-text-violet;
+	}
+	&.yellow {
+		color: $color-text-yellow;
+	}
+}
+
+.title-small {
+	font-weight: 500;
+}
+
+.custom-welcome-title {
+	margin-bottom: 1.5em;
+	@include fsz-cha(20, 30, 16);
+}
+
+.custom-checkmark {
+	color: #00bad1;
+	font-size: 20px;
+}

@@ -1,0 +1,28 @@
+
+// Page creat token
+.xdc-donate {
+    .box-desc {
+        margin-top: 3em!important;
+        @include media-breakpoint-down(md){
+            margin-top: 1.5em!important;
+        }
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .flex-box {
+        display: flex;
+        align-items: center;
+        .box-radio {
+            display: flex;
+            align-items: center;
+            label {
+                padding: 2px 0;
+            }
+        }
+    }
+}
+
+// Pge confirm

@@ -1,0 +1,28 @@
+a {
+    color: $color-link-default;
+    @extend %transit;
+	&:visited {
+		color: $color-link-default;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color-text-violet;
+	}
+	&:focus {
+		outline: 0;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+.dropdown-menu {
+	li {
+		a { color: #212529 !important; }
+	}
+}

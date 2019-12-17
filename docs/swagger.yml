@@ -1,0 +1,132 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: StableCoin APIs
+  description: Happy to code StableCoin APIs
+  license:
+    name: Github
+    url: 'https://github.com/XinFinOrg/stablecoin'
+tags:
+  - name: Config
+    description: Get StableCoin Application Configuration
+  - name: Account
+    description: Get account's informations(from XinFinScan)
+  - name: Token
+    description: Get token's information(from XinFinScan)
+schemes:
+  - https
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /api/config:
+    get:
+      tags:
+        - Config
+      summary: Get StableCoin Application Configuration
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '406':
+          description: Not Acceptable
+        '500':
+          description: Server Internal Error
+  '/api/account/{address}':
+    get:
+      tags:
+        - Account
+      summary: Get account's informations(calling XinFinScan API)
+      parameters:
+        - name: address
+          in: path
+          type: string
+          description: 'Logining address, Owner address'
+          required: true
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '406':
+          description: Not Acceptable
+        '500':
+          description: Server Internal Error
+  '/api/account/{address}/listTokens':
+    get:
+      tags:
+        - Account
+      summary: Get token list following an address(calling XinFinScan API)
+      parameters:
+        - name: address
+          in: path
+          type: string
+          description: 'Logining address, Owner address'
+          required: true
+        - name: limit
+          in: query
+          type: number
+          description: Limit records in response. Maximum is 200
+          minimum: 0
+        - name: page
+          in: query
+          type: number
+          description: Page number
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '406':
+          description: Not Acceptable
+        '500':
+          description: Server Internal Error
+  /api/token/createToken:
+    post:
+      tags:
+        - Token
+      summary: Generate smart contract following inputs
+      parameters:
+        - name: token
+          in: body
+          description: Token object
+          required: true
+          schema:
+            type: object
+            required:
+              - name
+              - symbol
+              - type
+              - totalSupply
+              - decimals
+            $ref: '#/definitions/token'
+      responses:
+        '200':
+          description: OK. All inputs and token contract source code
+        '400':
+          description: Bad Request
+        '401':
+          description: Unauthorized
+        '406':
+          description: Not Acceptable
+        '500':
+          description: Server Internal Error
+definitions:
+  token:
+    type: object
+    example:
+      name: Tether
+      symbol: Tether
+      decimals: 18
+      totalSupply: 100000000
+      type: stablecoin
+      minFee: 0.005
