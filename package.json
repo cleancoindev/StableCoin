@@ -50,7 +50,7 @@
     "moment": "^2.24.0",
     "mongoose": "^5.5.12",
     "morgan": "^1.9.1",
-    "solc": "^0.4.25",
+    "solc": "^0.8.13",
     "store": "^2.0.12",
     "swagger-ui-express": "^4.0.2",
     "trezor-connect": "^7.0.3",
